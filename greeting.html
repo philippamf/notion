@@ -7,7 +7,7 @@
     font-size: xx-large;
     color: #626262;
     padding: 5px;
-    border: 1px solid #ececec;
+    border: 1px solid #FFF ;
     text-align: center;
     line-height: 1.5;
     height:85%
@@ -36,27 +36,12 @@ body{
     weekday[5] = "friday";
     weekday[6] = "saturday";
     var d = new Date();
-    
-    var month = new Array();
-    month[0] = "january";
-    month[1] = "february";
-    month[2] = "march";
-    month[3] = "april";
-    month[4] = "may";
-    month[5] = "june";
-    month[6] = "july";
-    month[7] = "august";
-    month[8] = "september";
-    month[9] = "october";
-    month[10] = "november";
-    month[11] = "december";
-    var n = month[d.getMonth()];
 
     
     var today = new Date();
     var hrs = today.getHours();
     var dayOfWeek = weekday[today.getDay()];
-    var date = dayOfWeek+" " + today.getDate() + "/" +(today.getMonth()+1) +'/'+today.getFullYear()  ;
+    var date = dayOfWeek+" " + today.getDate() + "/" +(today.getMonth("MMMM")+1) +'/'+today.getFullYear()  ;
 
     var greet;
 
