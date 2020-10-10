@@ -38,8 +38,8 @@ h1 {
 .card {
     padding: 10px 25px 10px 25px;
     border-radius: 10px;
-    background: #d6edff;
-    color: #00000;
+    background: #009688;
+    color: #fff;
     display: inline-block;
     box-shadow: 2px 2px 1px 0px #295C7B;
 }
@@ -51,8 +51,8 @@ h1 {
 
 .clock {
     display: inline-block;
-font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
     font-size: 1.2em;
     /* padding-left: 20px; */
 }
@@ -72,21 +72,21 @@ font-family: 'Poppins', sans-serif;
     min-width: 162px;
     /* padding-right: 30px; */
     /* border-right: 2px solid #295C7B; */
-    font-family: 'Poppins', sans-serif;
+font-family: 'Poppins', sans-serif;
     font-size: 1.2em;
 }
 .greet{
     
     min-width: 162px;
     /* padding-right: 30px; */
-    font-family: 'Poppins', sans-serif;
+   font-family: 'Poppins', sans-serif;
     font-size: 1.2em;
 }
 
     </style>
 </head>
 <body>
-   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
 <div class="full-table">
   <div class="table-cell">
@@ -119,10 +119,10 @@ var hour = zeros(twelveHour(today.getHours()));
 var minutes = zeros(today.getMinutes());
 var seconds = zeros(today.getSeconds());
 if(today.getHours() >=12){
-    seconds+=" pm"
+    seconds+=" PM"
 }
 else{
-    seconds+=" am"
+    seconds+=" AM"
 }
 hrs = today.getHours();
 if (hrs < 12)
